@@ -14,15 +14,43 @@
     <!-- CUSTOM CSS -->
     <link href="css/styles.css" rel="stylesheet">
 
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/c3fd22b8e3.js" crossorigin="anonymous"></script>
+    
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 </head>
 <body>
-    <h1>Estudio de Arquitectura y Diseño de Interiores</h1>
-
-
+    <header>
+        <!-- MENÚ -->
+        <nav id="menu">
+            <div>
+                <i class="fa-solid fa-bars" onclick="menu()"></i>
+                <ul>
+                    <li>
+                        <a href="#top" class="logo">
+                            <img src="media/svg/logo.svg" alt="logo_Delta">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#news" onclick="closeMenu()">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#talks" onclick="closeMenu()">Sobre nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#schedule" onclick="closeMenu()">Contacto</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
 
 
 
