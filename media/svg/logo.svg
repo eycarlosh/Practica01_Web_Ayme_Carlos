@@ -1,5 +1,13 @@
-<svg width="1279" height="827" viewBox="0 0 1279 827" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="1279" height="827" fill="white"/>
-<path d="M153.5 190.82H609.427C731.31 190.82 830.263 289.773 830.263 411.655C830.263 533.538 731.31 632.491 609.427 632.491H153.5V190.82Z" fill="#050B25" stroke="black"/>
-<path d="M866.718 194.821L873.148 183.085L1124.16 642.786C899.115 642.171 757.151 395.467 866.718 194.821Z" fill="#050B25" stroke="black"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279 827">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #050b25;
+        stroke: #000;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M153.5,190.82h455.93c121.88,0,220.84,98.95,220.84,220.83s-98.95,220.84-220.84,220.84H153.5V190.82Z"/>
+  <path class="cls-1" d="M866.72,194.82l6.43-11.74,251.01,459.7c-225.05-.61-367.01-247.32-257.44-447.97Z"/>
 </svg>
