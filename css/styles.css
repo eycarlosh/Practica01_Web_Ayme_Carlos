@@ -1,7 +1,60 @@
+/* -----------------VARIABLES CSS--------------- */
+:root {
+    /* -----------COLORES------------- */
+    --primary-color: hsl(229, 76%, 8%);
+    --secondary-color: hsl(100, 7%, 92%);
+    --white-color: hsl(0, 0%, 100%);
+    --lighterText-color: hsl(228,77,8,50%);
+
+    /* -----------TAMAÑO TIPOGRAFÍA------------- */
+    --display01: 20rem; 
+    --display02: 4rem;
+    --h1: 3.5rem;
+    --h2:2.5rem;
+    --h3: 2rem;
+    --h4: 1.5rem;
+    --paragraph-large: 1.125rem;
+    --paragraph-medium: 0.875rem;
+    --footer-text: 0.75rem;
+
+    /* -----------TAMAÑO TIPOGRAFÍA------------- */
+    --font-bold: 600;
+    --font-regular:400;
+}
+
+@font-face {
+    font-family:'Geist';
+    src: url(../media/fonts/Geist-Bold.ttf);
+    src: url(../media/fonts/Geist-Regular.ttf);
+}
+
 * {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    font-family: 'Geist';
+
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: var(--font-bold);
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.125rem;
 }
 
 header {
