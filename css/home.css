@@ -142,8 +142,42 @@ header {
     font-weight: 600;
 }
 
+/* ---------------------- LOGOS --------------- */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 5rem 0 5rem 0;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 20s slide infinite linear;
+}
+
+.logos-slide > img {
+    height: 3rem;
+    margin: 0 3rem;
+}
+
  /* ---------------------- FOOTER --------------- */
 
+.row {
+    --bs-gutter-x: 0;
+}
+ 
 .footer-grid {
     background-color: var(--primary-color);
     margin-top: 5rem;
