@@ -71,6 +71,14 @@ header {
     position: relative;
 }
 
+section {
+    margin: 1rem;
+    padding: 2rem;
+}
+
+img {
+    border-radius: 5px;
+}
 
 /* --------------------------------MENÚ ---------------------------*/
 
@@ -78,7 +86,35 @@ header {
 
 
 
-/* ---------- MEDIA QUERYS -------------- */
+
+
+
+
+
+.project-fila2 {
+    padding: 12px 0;
+}
+
+.project-img-full {
+    width: 100vw;
+    height: auto;
+    padding: 2rem;
+    margin: 0;
+}
+
+.project-img-fullDiv {
+    width: fit-content;
+}
+
+.project-animated-fullText {
+    padding: 0 16rem;
+}
+
+.project-grid-imgsHouse {
+    padding: 24px 0;
+}
+
+/* ---------------------------------------------------------------------------------- MEDIA QUERYS ------------------------------------------------------------------ */
 
 /* TABLET --- */
 @media screen and (max-width: 1200px) {
