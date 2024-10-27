@@ -142,6 +142,60 @@ header {
     font-weight: 600;
 }
 
+ /* ---------------------- FOOTER --------------- */
+
+.footer-grid {
+    background-color: var(--primary-color);
+    margin-top: 5rem;
+    
+}
+
+.footer-container-1,
+.footer-container-2,
+.footer-container-3,
+.footer-container-4,
+.footer-container-5 {
+    color: var(--secondary-color);
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.footer-container-5,
+.footer-container-3 {
+   padding-top: 6rem; 
+}
+
+ .footer-container-3 > button {
+    background: var(--secondary-color);
+    padding: 16px;
+    color: var(--primary-color);
+    border-radius: 20px;
+    border: none;
+    margin-top: 1rem;
+    
+ }
+
+ .footer-container-1 > ul,
+ .footer-container-2 > ul {
+    padding-left: 0;
+    font-size: 1.125rem;
+ }
+
+ .footer-container-4 > p {
+    margin: 0;
+ }
+
+ .footer-container-5 > h1 {
+    font-size: var(--display01);
+ }
+
+ .footer-line {
+    width: 95%;
+    border: 0;
+    border-bottom: 2px solid var(--secondary-color);
+    margin: 20px auto;
+ }
 
 
 
@@ -234,7 +288,5 @@ header {
         
         
     /* ---------------------- FOOTER --------------- */
-
-   
 
 }
