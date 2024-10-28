@@ -24,9 +24,33 @@
 <body>
     <header>
         <!-- MENÚ -->
+        <nav id="menu">
+          <div>
+              <i class="fa-solid fa-bars" onclick="menu()"></i>
+              <ul>
+                  <li>
+                      <a href="#top" class="logo">
+                          <img src="media/svg/logo.svg" alt="logo_Delta">
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#news" onclick="closeMenu()">Proyectos</a>
+                  </li>
+                  <li>
+                      <a href="#talks" onclick="closeMenu()">Sobre nosotros</a>
+                  </li>
+                  <li>
+                      <a href="#schedule" onclick="closeMenu()">Contacto</a>
+                  </li>
+                  <li>
+                      <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                  </li>
+              </ul>
+          </div>
+      </nav>
 
-        <div class="container text-center">
-            <div class="row">
+        <div class="container text-center d-flex justify-content-center align-items-end h-100">
+            <div class="row w-100 project-header-text">
                 <div class="col">
                     <p>Minimalista</p>
                 </div>
@@ -64,10 +88,10 @@
         <div class="container text-center">
             <div class="row">
               <div class="col">
-                <img src="./media/img/project/p-2.jpg" class="img-fluid" alt="Exterior casa Cúspide">
+                <img src="./media/img/project/p-2.jpg" class="img-fluid project-img-cover" alt="Exterior casa Cúspide">
               </div>
               <div class="col">
-                <img src="./media/img/project/p-3.jpg" class="img-fluid" alt="Exterior patio Casa Cúspide">
+                <img src="./media/img/project/p-3.jpg" class="img-fluid project-img-cover" alt="Exterior patio Casa Cúspide">
               </div>
             </div>
             <div class="row project-fila2" >
@@ -77,7 +101,7 @@
                     naturaleza y con unas espectaculares vistas.</p>
                 </div>
                 <div class="col">
-                  <img src="./media/img/project/p-4.jpg" class="img-fluid" alt="Piscina y vistas Casa Cúspide">
+                  <img src="./media/img/project/p-4.jpg" class="img-fluid project-img-cover" alt="Piscina y vistas Casa Cúspide">
                 </div>
               </div>
           </div>
@@ -87,7 +111,7 @@
     <div class="project-img-full">
         <img src="./media/img/project/p-5.jpg" class="project-img-fullDiv" alt="Exterior casa Cúspide">
         <div>
-            <h2 class="d-flex align-items-center text-end">Mobiliario de diseño con formas orgánicas y
+            <h2 class="d-flex align-items-center text-end project-text-overlay">Mobiliario de diseño con formas orgánicas y
             materiales de gran durabilidad</h2>
         </div>
     </div>
@@ -97,13 +121,25 @@
         <div class="container text-center">
             <div class="row">
               <div class="col">
-                Card 1
+                <img src="./media/img/project/p-6.jpg" class="img-fluid project-img-cover" alt="">
+                <!-- <div class="text-interior-card">
+                  <p class="d-flex project-text-overlay">01</p>
+                  <h4 class="d-flex project-text-overlay">Naturaleza interior</h4>
+                </div> -->
               </div>
               <div class="col">
-                Card 2
+                <img src="./media/img/project/p-7.jpg" class="img-fluid project-img-cover" alt="">
+                <!-- <div class="text-interior-card">
+                  <p class="d-flex project-text-overlay">02</p>
+                  <h4 class="d-flex project-text-overlay">Amplitud y elegancia</h4>
+                </div> -->
               </div>
               <div class="col">
-                Card 3
+                <img src="./media/img/project/p-8.jpg" class="img-fluid project-img-cover" alt="">
+                <!-- <div class="text-interior-card">
+                  <p class="d-flex project-text-overlay">03</p>
+                  <h4 class="d-flex project-text-overlay">Espacio luminoso y adaptable</h4>
+                </div> -->
               </div>
             </div>
           </div>
@@ -113,7 +149,7 @@
     <div class="project-img-full">
         <img src="./media/img/project/p-9.jpg" class="project-img-fullDiv" alt="Exterior casa Cúspide">
         <div>
-            <h2 class="d-flex align-items-center text-end">Gimnasio exterior con terraza
+            <h2 class="d-flex align-items-center text-end project-text-overlay2">Gimnasio exterior con terraza
             y piscina</h2>
         </div>
     </div>
@@ -130,37 +166,40 @@
           </div>
           
           <!-- última galería de la página del proyecto -->
-          <div class="container text-center">
+          <div class="container-fluid text-center">
             <div class="row">
-              <div class="col">
-                <img src="./media/img/project/p-10.jpg" class="img-fluid" alt="">
+              <div class="col-7">
+                <img src="./media/img/project/p-10.jpg" class="img-fluid project-img-cover" alt="">
               </div>
-              <div class="col">
-                <img src="./media/img/project/p-11.jpg" class="img-fluid" alt="">
+              <div class="col-5">
+                <img src="./media/img/project/p-11.jpg" class="img-fluid project-img-cover" alt="">
               </div>
             </div>
           </div>
           <div class="row project-grid-imgsHouse">
-            <div class="col">
-                <img src="./media/img/project/p-12.jpg" class="img-fluid" alt="">
+            <div class="col-5">
+                <img src="./media/img/project/p-12.jpg" class="img-fluid project-img-cover" alt="">
             </div>
-            <div class="col">
-                <img src="./media/img/project/p-13.jpg" class="img-fluid" alt="">
+            <div class="col-7">
+                <img src="./media/img/project/p-13.jpg" class="img-fluid project-img-cover" alt="">
             </div>
           </div>
         </div>
         <div class="row">
             <div class="col">
-                <img src="./media/img/project/p-14.jpg" class="img-fluid" alt="">
+                <img src="./media/img/project/p-14.jpg" class="img-fluid project-img-cover" alt="">
             </div>
             <div class="col">
-                <img src="./media/img/project/p-15.jpg" class="img-fluid" alt="">
+                <img src="./media/img/project/p-15.jpg" class="img-fluid project-img-cover" alt="">
             </div>
           </div>
         </div>
     </section>
 
-    <footer></footer>
+    <!-- FOOTER -->
+    <footer>
+    
+  </footer>
 
 <!-- --------------------------------LINKS JS ------------------------------------->
     <!-- JAVASCRIPT BOOTSTRAP -->
