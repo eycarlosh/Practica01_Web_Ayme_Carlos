@@ -142,40 +142,6 @@ header {
     font-weight: 600;
 }
 
-/* ---------------------- SERVICIOS --------------- */
-.servicios {
-    background-color: var(--primary-color);
-    border-radius: 12px;
-    padding: 5rem 0 5rem 0;
-    overflow: hidden;
-}
-
-.servicios-container {
-    padding: 0;
-    margin: 0;
-}
-
-.servicios-caja-1,
-.servicios-caja-2,
-.servicios-caja-3 {
-    padding: 4rem;
-}
-
-.servicios-caja-1 > h1,
-.servicios-caja-1 > p {
-    color: var(--secondary-color);
-}
-
-.servicios-caja-2 > h1,
-.servicios-caja-2 > p {
-    color: var(--secondary-color);
-}
-
-.servicios-caja-3 > h1,
-.servicios-caja-3 > p {
-    color: var(--secondary-color);
-}
-
 /* ---------------------- LOGOS --------------- */
 @keyframes slide {
     from {
@@ -206,10 +172,50 @@ header {
     margin: 0 3rem;
 }
 
+/* ---------------------- SERVICIOS --------------- */
+.servicios {
+    padding: 5rem 2rem 5rem 2rem;
+    overflow: hidden;
+}
+
+.servicios-titulo {
+    margin: 4rem 0rem 4rem 0rem;
+    text-align: center;
+}
+
+.servicios-caja-1,
+.servicios-caja-2,
+.servicios-caja-3 {
+    padding: 4rem;
+    box-shadow: 0px 0px 8px 1px rgb(119 119 119 / 30%);
+    border: .5px solid rgba(255, 255, 255, .6);
+    border-radius: 12px;
+    background: rgb(213 213 213 / 10%);
+}
+
+.servicios-caja-1 > h1,
+.servicios-caja-1 > p {
+    color: var(--primary-color);
+    padding: 0 0 2rem 0;
+}
+
+.servicios-caja-2 > h1,
+.servicios-caja-2 > p {
+    color: var(--primary-color);
+    padding: 0 0 2rem 0;
+}
+
+.servicios-caja-3 > h1,
+.servicios-caja-3 > p {
+    color: var(--primary-color);
+    padding: 0 0 2rem 0;
+}
+
+
  /* ---------------------- FOOTER --------------- */
 
 .row {
-    --bs-gutter-x: 0;
+    --bs-gutter-x: 0
 }
  
 .footer-grid {
