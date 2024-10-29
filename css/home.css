@@ -417,7 +417,17 @@ header {
 
 /* MÓVIL --- */
 @media screen and (max-width: 750px) {
+    h1 {
+        font-size: 2rem;
+    }
 
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
 
     /* ---------- HEADER ----------- */
 
@@ -431,8 +441,53 @@ header {
     #menu > div > ul {
         padding: 30% 0;
     }
+
+    /* ---------------------- LOGOS --------------- */
+    .logos-slide > img {
+        height: 1.5rem;
+    }
+
+    /* ---------------------- (GALERÍA) PROYECTOS RECIENTES --------------- */
+    .p-recientes-grid-wrapper {
+        margin: 1rem;
+    }
+
+    .p-recientes-grid-wrapper > div {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .p-recientes-titulo {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .p-recientes-titulo > h1 {
+        width: 100%;
+    }
+
+    .p-recientes-titulo > p {
+        width: 100%;
         
-        
+    }
+
+
+    
+    /* ---------------------- SERVICIOS --------------- */
+    .servicios-container-1 {
+        margin: 0;
+
+    }
+    
+    .servicios-caja-1,
+    .servicios-caja-2,
+    .servicios-caja-3 {
+        padding: 2rem;
+    }
+
+
     /* ---------------------- FOOTER --------------- */
 
 }
