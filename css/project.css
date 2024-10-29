@@ -80,74 +80,62 @@ img {
     border-radius: 5px;
 }
 
+li {
+    list-style: none;
+}
+
 /* --------------------------------MENÚ ---------------------------*/
+/* Menú de escritorio */
 #menu {
-    position: sticky;
-    top: 20px;
+    position: fixed;
+    top: 2rem;
     z-index: 100;
-    width: 60%;
-    height: 3em;
+    width: 100%;
+    border-radius: 50px;
+    max-width: 100%;
+    height: 4rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 1em;
-    background-color: #050505;
-    border-radius: 50px;
-    margin: 2%;
-    margin-left: 18%;
+    background-color: rgba(234, 236, 233, 0.8);
+    backdrop-filter: blur(20px);
 }
 
+/* Contenedor del logo y los links */
 #menu > div {
-    width: 100%;
-    height: 3em;
     display: flex;
     align-items: center;
+    width: 100%;
+    max-width: 80%; /* Ajuste del ancho máximo */
+    justify-content: space-between;
 }
 
-#menu > div > i,
-#menu > div > ul > li:last-child {
+/* Estilo de los íconos y enlaces */
+#menu-icon, #close-icon {
+    color: white;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+/* Ocultamos el ícono de cerrar por defecto */
+#close-icon {
     display: none;
 }
 
-#menu > div > ul {
-    width: 100%;
-    height: 3em;
-    padding: 0;
+#menu-items {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1.5em;
+    margin: 0 auto; /* Centrado */
 }
 
-#menu > div > ul > li {
-    list-style: none;
-    width: 13%;
-    margin-left: 3%;
-    display: flex;
-    justify-content: center;
-}
-
-#menu > div > ul > li:first-child > a {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-#menu > div > ul > li:first-child > a > img {
-    height: 2em;
-    width: auto;
-}
-
-#menu > div > i,
-#menu > div > ul > li > a,
-#menu > div > i {
-    color: white;
-}
-
-#menu > div > ul > li > a {
-    font-size: 1em;
+/* Enlaces de menú de escritorio */
+.menu-link {
     color: white;
     text-decoration: none;
-    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 1em;
     font-weight: 600;
 }
 
@@ -243,12 +231,61 @@ img {
 /* ---------------------------------------------------------------------------------- MEDIA QUERYS ------------------------------------------------------------------ */
 
 /* TABLET --- */
+@media screen and (min-width: 1200px) {
+    #menu-icon {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1200px) {
 
     /* ---------- HEADER ----------- */
 
     /* --------------------- MENÚ -------------------- */
+    #menu {
+        width: 100%;
+        padding: 0 1em;
+        top: 0;
+    }
 
+    #menu-items {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 4rem;
+        padding-left: 2rem;
+        background-color: var(--primary-color);
+        transition: left 0.5s ease;
+        gap: 1.5em;
+    }
+
+    #menu-items.show {
+        left: 0;
+    }
+
+    /* Tamaño de fuente y alineación */
+    .menu-link {
+        font-size: 5rem;
+        color: white;
+        padding-left: 1rem;
+    }
+
+    /* Íconos de menú */
+    #menu-icon {
+        display: block;
+    }
+
+    #close-icon {
+        display: block;
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+        font-size: 2rem;
+    }
 
     /* ---------------------- FOOTER --------------- */
 

@@ -1,20 +1,16 @@
 // -------- MENÚ -------------
 
-function openMenu() {
-    "use strict";
-    document.getElementById("menu").firstElementChild.children[1].style.left = "0";
-  }
+$(document).ready(function() {
   
-  function closeMenu() {
-    "use strict";
-    document.getElementById("menu").firstElementChild.children[1].style.left = "-100%";
-  }
-  
-  function menu() {
-    "use strict";
-    if (document.getElementById("menu").lastElementChild.style.left === "0") {
-        closeMenu();
-    } else {
-        openMenu();
-    }
-  }
+  $('#menu-icon').click(function() {
+      $('#menu-items').addClass('show');
+  });
+
+  $('#close-icon').click(function() {
+      $('#menu-items').removeClass('show');
+  });
+
+  $('.menu-link').click(function() {
+      $('#menu-items').removeClass('show');
+  });
+});
