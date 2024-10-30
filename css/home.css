@@ -234,6 +234,7 @@ header {
 .p-trabajo-text {
     padding: 0 5rem 1rem 2rem;
     color: var(--primary-color);
+    width: 70%;
 }
 
 .p-trabajo-img-1,
@@ -565,6 +566,48 @@ header {
         height: 1.5rem;
     }
 
+    /* ---------------------- PROCESO DE TRABAJO --------------- */
+    .p-trabajo-titulo {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .p-trabajo-titulo > p {
+        width: 80%;
+    }
+
+    .p-trabajo-titulo > h1 {
+        width: 80%;
+    }
+
+    .p-trabajo-btns {
+        display: flex;
+        justify-content: center;
+        margin: 0 2rem 1rem 2rem;
+    }
+
+    .p-trabajo-container {
+        display: flex;
+        margin: 0 1rem 0 1rem;
+        border-radius: 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .p-trabajo-text {
+        padding: 2rem 0rem 2rem 0rem;
+    }
+
+    .p-trabajo-img-1, 
+    .p-trabajo-img-2, 
+    .p-trabajo-img-3 {
+        border-radius: 0 0rem 1.5rem 1.5rem;
+    }
+
     /* ---------------------- (GALERÍA) PROYECTOS RECIENTES --------------- */
     .p-recientes-grid-wrapper {
         margin: 1rem;
@@ -578,16 +621,17 @@ header {
     .p-recientes-titulo {
         display: flex;
         flex-direction: column;
-        margin: 1rem;
+        margin: 2rem;
         text-align: center;
+        align-items: center;
     }
 
     .p-recientes-titulo > h1 {
-        width: 100%;
+        width: 90%;
     }
 
     .p-recientes-titulo > p {
-        width: 100%;
+        width: 90%;
         
     }
 
@@ -613,5 +657,44 @@ header {
 
 
     /* ---------------------- FOOTER --------------- */
+
+}
+
+/* MÓVIL (PANTALLA MÁS PEQUEÑA) --- */
+@media screen and (max-width: 425px) {
+
+    /* ---------------------- PROCESO DE TRABAJO --------------- */
+
+    .p-trabajo-titulo > p {
+        width: 100%;
+    }
+
+    .p-trabajo-titulo > h1 {
+        width: 100%;
+    }
+
+    .p-trabajo-text {
+        padding: 2rem;
+        width: 100%;
+    }
+    
+
+    /* ---------------------- (GALERÍA) PROYECTOS RECIENTES --------------- */
+
+    .p-recientes-titulo > h1 {
+        width: 100%;
+    }
+
+    .p-recientes-titulo > p {
+        width: 100%;
+        
+    }
+
+    /* ---------------------- SERVICIOS --------------- */
+
+
+    .servicios {
+        padding: 8rem 0rem 8rem 0rem;
+    }
 
 }
