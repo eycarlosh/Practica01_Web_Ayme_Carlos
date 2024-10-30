@@ -1,7 +1,7 @@
 /* -----------------VARIABLES CSS--------------- */
 :root {
     /* -----------COLORES------------- */
-    --primary-color: hsl(229, 76%, 8%);
+    --primary-color: hsl(228, 76%, 8%);
     --secondary-color: hsl(100, 7%, 92%);
     --white-color: hsl(0, 0%, 100%);
     --lighterText-color: hsl(228,77,8,50%);
@@ -141,7 +141,12 @@ li {
     color: var(--primary-color);
     text-decoration: none;
     font-size: 1em;
-    font-weight: var(--font-regular);
+    font-weight: var(--font-bold);
+}
+
+.menu-link:hover {
+    color: #050b245d;
+    transition: 0.5s ease;
 }
 
 .logo img {
@@ -237,13 +242,9 @@ li {
     margin-top: 4rem;
 }
 
-.project-grid-imgsHouse {
-    padding: 24px 0;
-}
-
 .project-img-cover {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -319,8 +320,12 @@ li {
 
     .menu-link {
         font-size: 5rem;
-        color: white;
+        color: var(--secondary-color);
         padding-left: 3rem;
+    }
+
+    .menu-link:hover {
+        color: var(--secondary-color);
     }
 
     #menu-icon {
@@ -386,6 +391,11 @@ li {
         font-size: 0.85rem;
     }
 
+    section {
+        margin: 1rem 0;
+        padding: 2rem 1rem;
+    }
+
     /* ---------- HEADER ----------- */
 
     .project-header-text > div > p {
@@ -433,7 +443,9 @@ li {
 
 }
 
-@media screen and (max-width: 500px) {
+
+
+@media screen and (max-width: 576px) {
 
 
     /* ---------- HEADER ----------- */
@@ -443,10 +455,14 @@ li {
     
     .menu-link {
         font-size: 2.5rem;
-        color: white;
+        color: var(--secondary-color);
         padding-left: 1rem;
     }
 
+    /* -------------------Primer grid --------------------------*/
+    .specific-margin-bootstrap {
+        --bs-gutter-y: 1.5rem;
+    }
         
     /* ----------Full image */
 
