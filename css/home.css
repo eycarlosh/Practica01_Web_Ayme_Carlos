@@ -173,6 +173,11 @@ header {
 }
 
 /* ---------------------- (GALERÍA) PROYECTOS RECEINTES --------------- */
+.p-recientes {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .p-recientes-titulo{
     display: flex;
     align-items: flex-start;
@@ -212,10 +217,6 @@ header {
     align-items: center;
 }
 
-/* .grid-wrapper > div:nth-child(even) {
-    opacity: 0 !important;
-} */
-
 .p-recientes-grid-wrapper > div > img {
     width: 100%;
     height: 100%;
@@ -232,6 +233,40 @@ header {
 .p-recientes-grid-wrapper .big {
     grid-column: span 2;
     grid-row: span 2;
+}
+
+.p-recientes-btns {
+    display: flex;
+    justify-content: flex-end;
+    margin: 4rem;
+}
+
+.p-recientes-btns > button {
+    transition: 0.5s ease;
+    color: hsl(226, 11%, 69%);
+    border-style: none;
+    background-color: white;
+    text-align: center;
+    padding: 15px 32px;
+    cursor: pointer;
+}
+
+.p-recientes-btns > button:hover {
+    transition: 0.5s ease;
+    color: var(--primary-color)
+}
+
+/* .p-recientes-general {
+    max-width: 1440px;
+    margin: 0 auto;
+} */
+
+.p-recientes-general.show {
+    width: 100%;
+}
+
+.p-recientes-general:not(.show) {
+    display: none;
 }
 
 /* ---------------------- SERVICIOS --------------- */
@@ -471,6 +506,12 @@ header {
     .p-recientes-titulo > p {
         width: 100%;
         
+    }
+
+    .p-recientes-btns {
+        display: flex;
+        justify-content: center;
+        margin: 0;
     }
 
 

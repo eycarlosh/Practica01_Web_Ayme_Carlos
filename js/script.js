@@ -14,3 +14,15 @@ $(document).ready(function() {
       $('#menu-items').removeClass('show');
   });
 });
+
+function showDiv(targetId) {
+    var divs = document.querySelectorAll('.p-recientes-general');
+  
+    divs.forEach(function(div) {
+        if (div.id === targetId) {
+            div.classList.add('show');
+        } else {
+            div.classList.remove('show');
+        }
+    });
+  }
