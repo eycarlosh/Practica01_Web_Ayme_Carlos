@@ -26,3 +26,15 @@ function showDiv(targetId) {
         }
     });
   }
+
+function showDiv2(targetId) {
+    var divs = document.querySelectorAll('.p-trabajo-general');
+  
+    divs.forEach(function(div) {
+        if (div.id === targetId) {
+            div.classList.add('show');
+        } else {
+            div.classList.remove('show');
+        }
+    });
+  }

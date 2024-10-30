@@ -4,7 +4,7 @@
     --primary-color: hsl(229, 76%, 8%);
     --secondary-color: hsl(100, 7%, 92%);
     --white-color: hsl(0, 0%, 100%);
-    --lighterText-color: hsl(228,77,8,50%);
+    --lighterText-color: hsl(226, 11%, 69%);
 
     /* -----------TAMAÑO TIPOGRAFÍA------------- */
     --display01: 20rem; 
@@ -172,17 +172,106 @@ header {
     margin: 0 3rem;
 }
 
+/* ---------------------- PROCESO DE TRABAJO --------------- */
+.p-trabajo {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 8rem;
+}
+
+.p-trabajo-titulo {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin: 0 6rem 2rem 6rem;
+}
+
+.p-trabajo-titulo > h1 {
+    width: 60%;
+}
+
+.p-trabajo-titulo > p {
+    width: 40%;
+}
+
+.p-trabajo-btns {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 4rem 1rem 4rem;
+}
+
+.p-trabajo-btns > button {
+    transition: 0.5s ease;
+    color: var(--lighterText-color);
+    border-style: none;
+    background-color: white;
+    text-align: center;
+    padding: 15px 32px;
+    cursor: pointer;
+}
+
+.p-trabajo-btns > button:hover {
+    transition: 0.5s ease;
+    color: var(--primary-color)
+}
+
+.p-trabajo-general.show {
+    width: 100%;
+}
+
+.p-trabajo-general:not(.show) {
+    display: none;
+}
+
+.p-trabajo-container {
+    display: flex;
+    margin: 0 6rem 0 6rem;
+    background-color: rgb(213 213 213 / 10%);
+    border-radius: 1.5rem;
+    align-items: flex-end;
+}
+
+.p-trabajo-text {
+    padding: 0 5rem 1rem 2rem;
+    color: var(--primary-color);
+}
+
+.p-trabajo-img-1,
+.p-trabajo-img-2,
+.p-trabajo-img-3 {
+    width: 100%;
+    height: 35rem;
+    border-radius: 0 1.5rem 1.5rem 0;
+    background-size: cover;
+}
+
+.p-trabajo-img-1 {
+    background-image: url(../media/img/home/IMG-PROCESO-TRABAJO/P-T-1.avif);
+
+}
+
+.p-trabajo-img-2 {
+    background-image: url(../media/img/home/IMG-PROCESO-TRABAJO/P-T-2.avif);
+    
+    
+}
+
+.p-trabajo-img-3 {
+    background-image: url(../media/img/home/IMG-PROCESO-TRABAJO/P-T-3.avif);
+}
+
 /* ---------------------- (GALERÍA) PROYECTOS RECEINTES --------------- */
 .p-recientes {
     max-width: 1440px;
     margin: 0 auto;
+    padding-top: 8rem;
 }
 
 .p-recientes-titulo{
     display: flex;
     align-items: flex-start;
     gap: 2rem;
-    margin: 6rem;
+    margin: 6rem 6rem 2rem 6rem;
 }
 
 .p-recientes-titulo > h1 {
@@ -208,7 +297,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-rows: 200px;
     grid-auto-flow: dense;
-    margin: 6rem;
+    margin: 0 6rem 0 6rem;
 }
 
 .p-recientes-grid-wrapper > div {
@@ -238,12 +327,12 @@ header {
 .p-recientes-btns {
     display: flex;
     justify-content: flex-end;
-    margin: 4rem;
+    margin: 0 4rem 1rem 4rem;
 }
 
 .p-recientes-btns > button {
     transition: 0.5s ease;
-    color: hsl(226, 11%, 69%);
+    color: var(--lighterText-color);
     border-style: none;
     background-color: white;
     text-align: center;
@@ -256,11 +345,6 @@ header {
     color: var(--primary-color)
 }
 
-/* .p-recientes-general {
-    max-width: 1440px;
-    margin: 0 auto;
-} */
-
 .p-recientes-general.show {
     width: 100%;
 }
@@ -271,7 +355,7 @@ header {
 
 /* ---------------------- SERVICIOS --------------- */
 .servicios {
-    padding: 5rem 2rem 5rem 2rem;
+    padding: 8rem 2rem 8rem 2rem;
     overflow: hidden;
 }
 
@@ -280,7 +364,6 @@ header {
 }
 
 .servicios-titulo {
-    margin: 4rem 0rem 4rem 0rem;
     text-align: center;
 }
 
