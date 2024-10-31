@@ -405,13 +405,13 @@ header {
 
  /* ---------------------- FOOTER --------------- */
 
-.row {
-    --bs-gutter-x: 0
+.bd-footer {
+    background-color: var(--primary-color);
 }
  
-.footer-grid {
+#footer-container {
     background-color: var(--primary-color);
-    margin-top: 5rem;
+    padding: 4rem 0 0 0
     
 }
 
@@ -426,11 +426,6 @@ header {
     padding-right: 3rem;
 }
 
-.footer-container-5,
-.footer-container-3 {
-   padding-top: 6rem; 
-}
-
  .footer-container-3 > button {
     background: var(--secondary-color);
     padding: 16px;
@@ -439,6 +434,10 @@ header {
     border: none;
     margin-top: 1rem;
     
+ }
+
+ .footer-container-3 > h4 {
+    color: var(--secondary-color);
  }
 
  .footer-container-1 > ul,
@@ -657,6 +656,23 @@ header {
 
 
     /* ---------------------- FOOTER --------------- */
+    .footer-container-1 > ul,
+    .footer-container-2 > ul {
+        font-size: 0.85rem;
+    }
+
+    .footer-container-1, 
+    .footer-container-2, 
+    .footer-container-3, 
+    .footer-container-4, 
+    .footer-container-5 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .footer-container-5 {
+        padding-top: 2rem;
+    }
 
 }
 
