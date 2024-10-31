@@ -1,7 +1,7 @@
 /* -----------------VARIABLES CSS--------------- */
 :root {
     /* -----------COLORES------------- */
-    --primary-color: hsl(229, 76%, 8%);
+    --primary-color: hsl(228, 76%, 8%);
     --secondary-color: hsl(100, 7%, 92%);
     --white-color: hsl(0, 0%, 100%);
     --lighterText-color: hsl(226, 11%, 69%);
@@ -57,18 +57,28 @@ p {
     font-size: 1.125rem;
 }
 
+section {
+    margin: 1rem;
+    padding: 2rem;
+}
+
 header {
     height: calc(100vh);
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    background-image: url(../img/);
+    background-image: url(../media/img/home/IMG_ARQUITEC/h-1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     flex-direction: column;
     z-index: 1;
     position: relative;
+}
+
+.title-home {
+    font-size: 2rem;
 }
 
 /* --------------------------------MENÚ ---------------------------*/
@@ -142,6 +152,48 @@ header {
     font-weight: 600;
 }
 
+/* ------------INTRODUCCIÓN DELTA------------- */
+
+.delta-introduction {
+    font-weight: var(--font-bold);
+}
+
+/* ----------------Carousel------------- */
+.carousel-item > img {
+    border-radius: 5px;
+}
+
+.divs-carousel-imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.title-img-carousel {
+    font-weight: var(--font-bold);
+}
+
+.paragraph-img-carousel {
+    font-size: 1rem;
+}
+
+.indicativo-imgs-carousel {
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-circle {
+    font-size: 0.75rem;
+    color: hsla(228, 76%, 8%, 0.3);
+    margin: 0 5%;
+}
+
+.bola-1, .bola-2, .bola-3, .bola-4, .bola-5 {
+    color: hsla(228, 76%, 8%, 1);
+}
+
 /* ---------------------- LOGOS --------------- */
 @keyframes slide {
     from {
@@ -170,6 +222,59 @@ header {
 .logos-slide > img {
     height: 3rem;
     margin: 0 3rem;
+}
+
+/* -------------TEXTO EN GRANDE----------------- */
+
+.big-home-text {
+    font-size: var(--display01);
+    font-weight: var(--font-bold);
+    color: var(--primary-color);
+}
+
+/* ---------------ACORDEÓN---------------- */
+
+.accordion-title {
+    font-size: 1.2rem;
+    font-weight: var(--font-bold);
+    width: 33%;
+    margin-left: 60%;
+}
+
+.accordion-header {
+    padding-left: 3%;
+}
+
+.accordion-body {
+    margin-left: 66%;
+    width: 30%;
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+.toggle-icon::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f067';
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.toggle-icon:not(.collapsed)::before {
+    content: '\f068';
+}
+
+.accordion-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    color: inherit !important;
+}
+
+.accordion-button:hover {
+    color: #0505055e;
+    transition: 0.5s ease;
 }
 
 /* ---------------------- PROCESO DE TRABAJO --------------- */

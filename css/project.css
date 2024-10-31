@@ -190,10 +190,16 @@ li {
     border-radius: 0;
 }
 
+/* -----------CARDS-------------- */
+
 .text-overlay {
     position: relative;
     margin-left: auto;
     margin-right: auto;
+}
+
+.shadow-img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .project-text-overlay {
