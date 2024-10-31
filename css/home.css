@@ -411,7 +411,8 @@ header {
  
 #footer-container {
     background-color: var(--primary-color);
-    padding: 4rem 0 0 0
+    padding: 4rem 0 0 0;
+    overflow: hidden;
     
 }
 
