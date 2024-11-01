@@ -170,6 +170,12 @@ header {
     font-weight: var(--font-bold);
 }
 
+.header-btn-CTA > button {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--primary-color);
+}
+
 /* ----------------Carousel------------- */
 .carousel-item > img {
     border-radius: 5px;
