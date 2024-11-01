@@ -4,7 +4,7 @@
     --primary-color: hsl(229, 76%, 8%);
     --secondary-color: hsl(100, 7%, 92%);
     --white-color: hsl(0, 0%, 100%);
-    --lighterText-color: hsl(228,77,8,50%);
+    --lighterText-color: hsl(226, 11%, 69%);
 
     /* -----------TAMAÑO TIPOGRAFÍA------------- */
     --display01: 20rem; 
@@ -55,20 +55,6 @@ h4 {
 
 p {
     font-size: 1.125rem;
-}
-
-header {
-    height: calc(100vh);
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    background-image: url(../img/);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    flex-direction: column;
-    z-index: 1;
-    position: relative;
 }
 
 /* --------------------------------MENÚ ---------------------------*/
@@ -143,6 +129,286 @@ header {
     height: auto;
 }
 
+/* ---------------------- HEADER --------------- */
+.header {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.header-text {
+    color: var(--secondary-color);
+    margin: 10rem 3rem 5rem 3rem;
+    width: 40%;
+}
+
+.header-title > h1 {
+    color: var(--secondary-color);
+    font-size: var(--display01);
+    margin: 0 3rem;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.header-title-slide {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 5rem 0 7rem 0;
+}
+
+.header-title {
+    display: inline-block;
+    animation: 20s slide infinite linear;
+}
+
+/* ------------------- CARD - TEAM ---------------------- */
+#team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8rem 3rem 0;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--primary-color)!important;
+  }
+  
+  .slide-container {
+    max-width: 1120px;
+    width: 100%;
+    padding: 4rem 0 4rem 0;
+  }
+  
+  .slide-content {
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  
+  .card {
+    border-radius: 25px;
+    background-color: var(--primary-color);
+  }
+  
+  .image-content,
+  .card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 15px;
+  }
+  
+  .image-content {
+    height: 20rem;
+    position: relative;
+    row-gap: 5px;
+  }
+  
+  .overlay-trans-1,
+  .overlay-trans-2,
+  .overlay-trans-3,
+  .overlay-trans-4,
+  .overlay-trans-5 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 25px;
+  }
+  
+  .overlay-trans-1 {
+    background-image: url(../media/img/about/team-1.avif);
+  }
+  
+  .overlay-trans-2 {
+    background-image: url(../media/img/about/team-4.avif);
+  }
+  
+  .overlay-trans-3 {
+    background-image: url(../media/img/about/team-2.avif);
+  }
+  
+  .overlay-trans-4 {
+    background-image: url(../media/img/about/team-5.avif);
+  }
+  
+  .overlay-trans-5 {
+    background-image: url(../media/img/about/team-3.avif);
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+  }
+  
+  .description {
+    font-size: 14px;
+    text-align: center;
+    color: var(--secondary-color);
+  }
+  
+  .button {
+    border: none;
+    font-size: 16px;
+    color: var(--primary-color);
+    padding: 8px 16px;
+    background-color: var(--secondary-color);
+    border-radius: 6px;
+    margin: 20px 0 10px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    bottom: 0;
+  }
+  
+  .button:hover {
+    background: var(--lighterText-color);
+  }
+
+/* ---------------------- MISION --------------- */
+.mision {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    margin: 8rem 5rem 0 5rem;
+}
+.mision-title,
+.mision-title-2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 1rem;
+}
+
+.mision-text,
+.mision-text-2 {
+    display: flex;
+    gap: 5rem;
+}
+
+/* ---------------------- VALORES --------------- */
+ .acordeon{
+    margin: 5rem;
+}
+
+.accordion-title {
+    font-size: 1.2rem;
+    font-weight: var(--font-bold);
+    width: 33%;
+    margin-left: 60%;
+}
+
+.accordion-header {
+    padding-left: 3%;
+}
+
+.accordion-body {
+    margin-left: 66%;
+    width: 30%;
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+.toggle-icon::before {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f067';
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.toggle-icon:not(.collapsed)::before {
+    content: '\f068';
+}
+
+.accordion-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    color: inherit !important;
+}
+
+.accordion-button:hover {
+    color: #0505055e;
+    transition: 0.5s ease;
+}
+
+/* ---------------------- FOOTER --------------- */
+
+.bd-footer {
+    background-color: var(--primary-color);
+}
+ 
+#footer-container {
+    background-color: var(--primary-color);
+    padding: 4rem 0 0 0;
+    overflow: hidden;
+    
+}
+
+.footer-container-1,
+.footer-container-2,
+.footer-container-3,
+.footer-container-4,
+.footer-container-5 {
+    color: var(--secondary-color);
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+ .footer-container-3 > button {
+    background: var(--secondary-color);
+    padding: 16px;
+    color: var(--primary-color);
+    border-radius: 20px;
+    border: none;
+    margin-top: 1rem;
+    
+ }
+
+ .footer-container-3 > h4 {
+    color: var(--secondary-color);
+ }
+
+ .footer-container-1 > ul,
+ .footer-container-2 > ul {
+    padding-left: 0;
+    font-size: 1.125rem;
+ }
+
+ .footer-container-4 > p {
+    margin: 0;
+ }
+
+ .footer-container-5 > h1 {
+    font-size: var(--display01);
+ }
+
+ .footer-line {
+    width: 95%;
+    border: 0;
+    border-bottom: 2px solid var(--secondary-color);
+    margin: 20px auto;
+ }
+
+
 
 
 /* ---------- MEDIA QUERYS -------------- */
@@ -176,13 +442,16 @@ header {
         font-size: 0.85rem;
     }
 
-    section {
-        margin: 1rem 0;
-        padding: 2rem 1rem;
+    /* ---------- HEADER ----------- */
+    .header-text > h3 {
+        font-size: 1.5rem;
     }
 
-    /* ---------- HEADER ----------- */
-
+    /* ---------- MISION ----------- */
+    .accordion-body {
+        margin-left: 32%;
+        width: 65%;
+    }
 
     /* --------------------- MENÚ -------------------- */
     #menu {
@@ -272,10 +541,7 @@ header {
     p {
         font-size: 1rem;
     }
-    
-    /* ---------- HEADER ----------- */
 
-    
     /* --------------------- MENU -------------------- */
     .menu-link {
         font-size: 3.5rem;
@@ -293,6 +559,49 @@ header {
         font-size: 2.5rem;
         left: 4rem;
     }
+    
+    /* ---------- HEADER ----------- */
+    .header-title > h1 {
+        font-size: 10rem;
+    }
+
+    /* -----------MISION------------------- */
+
+    .accordion-title {
+        font-size: 1.2rem;
+        font-weight: var(--font-bold);
+        width: auto;
+        margin-left: 0;
+    }
+    
+    .accordion-header {
+        padding-left: 1%;
+    }
+    
+    .accordion-body {
+        margin-left: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    /* --------------------- MISION -------------------- */
+
+    .mision {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .mision-title, .mision-title-2 {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        gap: 1rem;
+        text-align: center;
+    }
+    
         
     /* ---------------------- FOOTER --------------- */
 
@@ -310,5 +619,34 @@ header {
         font-size: 2.5rem;
         color: var(--secondary-color);
         padding-left: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+
+/* --------------------- header -------------------- */
+    .header-text {
+        margin: 10rem 2rem 2rem;
+        width: 90%;
+    }
+
+/* --------------------- mision -------------------- */
+    .mision {
+        margin: 5rem 2rem 0rem 2rem;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+/* --------------------- header -------------------- */
+    .header-text {
+        margin: 10rem 1rem 1rem;
+        text-align: center;
+    }
+
+    .header-title > h1 {
+        font-size: 7rem;
     }
 }
