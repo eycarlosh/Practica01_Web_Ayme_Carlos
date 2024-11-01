@@ -15,6 +15,24 @@ $(document).ready(function() {
   });
 });
 
+
+// --------CAROUSEL MOSTRAR/OCULTAR DIVS SEGÚN IMAGEN-----------
+
+$(document).ready(function () {
+    const $carousel = $("#carouselExampleControlsNoTouching");
+    const $contentDivs = $(".divs-carousel-imgs");
+
+    $carousel.on("slide.bs.carousel", function (event) {
+        const currentSlide = event.to + 1;
+
+        $contentDivs.each(function (index) {
+            $(this).toggleClass("active", index + 1 === currentSlide);
+        });
+    });
+});
+
+// ------------------------------------------------------------------------
+
 function showDiv(targetId) {
     var divs = document.querySelectorAll('.p-recientes-general');
   

@@ -82,14 +82,14 @@ header {
 }
 
 .title-home {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--secondary-color);
     width: 60%;
-    margin: 3% 0;
+    margin: 2% 0;
 }
 
 .header-btn-CTA {
-    margin-bottom: 3%;
+    margin-bottom: 5%;
 }
 
 /* --------------------------------MENÚ ---------------------------*/
@@ -193,17 +193,32 @@ header {
 
 .indicativo-imgs-carousel {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
 }
 
 .fa-circle {
     font-size: 0.75rem;
     color: hsla(228, 76%, 8%, 0.3);
-    margin: 0 5%;
+    margin: 0 1%;
 }
 
-.bola-1, .bola-2, .bola-3, .bola-4, .bola-5 {
+.bola-1, .bola-2, .bola-3, .bola-4 {
     color: hsla(228, 76%, 8%, 1);
+}
+
+.divs-carousel-imgs {
+    display: none;
+    text-align: center;
+}
+
+.divs-carousel-imgs.active {
+    display: block;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    z-index: 0;
 }
 
 /* ---------------------- LOGOS --------------- */
@@ -617,6 +632,10 @@ header {
 
     /* ---------- HEADER ----------- */
 
+    .title-home {
+        font-size: 1.5rem;
+    }
+
     /* --------------------- MENÚ -------------------- */
 
     #menu {
@@ -676,9 +695,17 @@ header {
         display: none;
     }
 
+    /* ----------------------ACORDEÓN--------------- */
+    .accordion-body {
+        margin-left: 32%;
+        width: 65%;
+    }
+
+/* ---------------------- FOOTER --------------- */
+
 }
 
-    /* ---------------------- FOOTER --------------- */
+    
 
     
 
@@ -710,7 +737,9 @@ header {
     }
 
     /* ---------- HEADER ----------- */
-
+    .title-home {
+        font-size: 1.3rem;
+    }
     
     /* --------------------- MENU -------------------- */
     .menu-link {
@@ -730,9 +759,39 @@ header {
         left: 4rem;
     }
 
+
+    /* ------------INTRODUCCIÓN DELTA------------- */
+
+    .delta-introduction {
+        font-size: 2rem;
+    }
+
+    .delta-introduction-p {
+        font-size: 1rem;
+    }
+
     /* ---------------------- LOGOS --------------- */
     .logos-slide > img {
         height: 1.5rem;
+    }
+
+    /* -----------ACORDEÓN------------------- */
+
+    .accordion-title {
+        font-size: 1.2rem;
+        font-weight: var(--font-bold);
+        width: auto;
+        margin-left: 0;
+    }
+    
+    .accordion-header {
+        padding-left: 1%;
+    }
+    
+    .accordion-body {
+        margin-left: 0;
+        width: 100%;
+        text-align: left;
     }
 
     /* ---------------------- PROCESO DE TRABAJO --------------- */
@@ -858,6 +917,20 @@ header {
         font-size: 2.5rem;
         color: var(--secondary-color);
         padding-left: 1rem;
+    }
+
+    /* ------------INTRODUCCIÓN DELTA------------- */
+
+    .delta-introduction {
+        font-size: 1.5rem;
+    }
+
+    .delta-introduction-p {
+        font-size: 0.8rem;
+    }
+
+    .margin-responsive {
+        margin: 1rem 0 !important;
     }
 }
 
