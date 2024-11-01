@@ -121,6 +121,10 @@ header {
     margin: 0 auto;
 }
 
+#menu-items > li {
+    list-style-type: none;
+}
+
 
 .menu-link {
     color: var(--primary-color);

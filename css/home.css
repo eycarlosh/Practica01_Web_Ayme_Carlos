@@ -131,6 +131,10 @@ header {
     margin: 0 auto;
 }
 
+#menu-items > li {
+    list-style-type: none;
+}
+
 
 .menu-link {
     color: var(--primary-color);
@@ -617,6 +621,7 @@ header {
         font-size: 5rem;
         color: var(--secondary-color);
         padding-left: 3rem;
+        text-decoration: none;
     }
 
     .menu-link:hover {
