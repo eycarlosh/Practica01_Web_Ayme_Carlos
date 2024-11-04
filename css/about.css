@@ -22,6 +22,8 @@
     --font-regular:400;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @font-face {
     font-family:'Geist';
     src: url(../media/fonts/Geist-Bold.ttf);
@@ -32,29 +34,49 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    font-family: 'Geist';
+    font-family: "Inter", sans-serif;
 
 }
 
 h1 {
     font-size: 3.5rem;
     font-weight: var(--font-bold);
+    font-family: 'Geist';
 }
 
 h2 {
     font-size: 2.5rem;
+    font-family: 'Geist';
 }
 
 h3 {
     font-size: 2rem;
+    font-family: 'Geist';
 }
 
 h4 {
     font-size: 1.5rem;
+    font-family: 'Geist';
 }
 
 p {
     font-size: 1.125rem;
+}
+
+/* ---------Botones---------- */
+
+.btn-propiedades-nuestras {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--primary-color);
+    border-radius: 50px;
+}
+
+.btn-propiedades-nuestras:hover {
+    transition: 0.5s ease;
+    background-color: hsla(100, 7%, 92%, 0.2);
+    border: none;
+    color: var(--secondary-color);
 }
 
 /* --------------------------------MENÚ ---------------------------*/
@@ -374,11 +396,7 @@ p {
 }
 
  .footer-container-3 > button {
-    background: var(--secondary-color);
     padding: 16px;
-    color: var(--primary-color);
-    border-radius: 20px;
-    border: none;
     margin-top: 1rem;
     
  }
