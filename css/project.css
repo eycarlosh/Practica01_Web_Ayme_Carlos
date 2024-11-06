@@ -276,6 +276,28 @@ li {
     object-fit: cover;
 }
 
+/* -----Scroll reveal text ------------ */
+
+.scroll-reveal span {
+    color: hsla(228, 76%, 8%, 0.2);
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-image: linear-gradient(hsla(228, 76%, 8%, 0.8), hsla(228, 76%, 8%, 0.8));
+    animation: scroll-reveal linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain 20vh;
+    animation-range-end: contain 70vh;
+}
+
+
+
+@keyframes scroll-reveal {
+    to {
+        background-size: 100% 100%;
+    }
+}
+
 /* ---------------------- FOOTER --------------- */
 
 
