@@ -336,6 +336,10 @@ header {
     transition: 0.5s ease;
 }
 
+.width-acordeon {
+    padding: 0 4rem 0 4rem;
+}
+
 /* ---------------------- PROCESO DE TRABAJO --------------- */
 .p-trabajo {
     max-width: 1440px;
@@ -961,6 +965,14 @@ header {
     .margin-responsive {
         margin: 1rem 0 !important;
     }
+
+    .title-home {
+        width: 100%;
+    }
+
+    .logos {
+        margin: 1rem 0 1rem 0;
+    }
 }
 
 
@@ -1000,5 +1012,6 @@ header {
     .servicios {
         padding: 8rem 0rem 8rem 0rem;
     }
+
 
 }

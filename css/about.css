@@ -638,6 +638,10 @@ p {
         color: var(--secondary-color);
         padding-left: 1rem;
     }
+
+    .header-text {
+        width: 80%;
+    }
 }
 
 
